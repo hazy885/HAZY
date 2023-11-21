@@ -1,0 +1,693 @@
+/* General Styles */
+#body {
+  background-color: rgb(169, 232, 250);
+}
+ul {
+  list-style-type: none;
+  margin: 100;
+  padding: 210;
+}
+
+#logo {
+  mix-blend-mode:color-dodge
+}
+/* Navigation Styles */
+.topnav {
+  background-color: #c8c8c8;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.topnav{
+  mix-blend-mode:color-dodge;
+  background-color: hsl(240, 88%, 3%);
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a.active {
+  background-color: #000000;
+}
+
+.topnav a:hover {
+  background-color: #5f5a5a;
+  color: rgb(255, 253, 253);
+}
+
+.logo {
+  float: left;
+  padding: 50px;
+}
+#logo2{
+  mix-blend-mode: color-burn;
+}
+
+/* Footer Styles */
+#footer {
+  background-color: #edecec;
+  padding: 10px;
+  text-align: center;
+  margin-top: 10px; /* Adjust the margin-top value as desired */
+}
+
+/* Responsive Styles */
+nav {
+  background: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #555;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: transparent;
+}
+
+.menu-container a {
+  color: rgb(169, 169, 169);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 20px;
+}
+
+.menu-container a.active {
+  border-bottom: 3px solid rgb(169, 169, 169);
+}
+
+/* Media screens smaller than 960px */
+@media (max-width: 960px) {
+  .menu-container {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .menu-container a {
+    margin: 10px;
+  }
+  .topnav{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 960px) {
+  /* CSS rules for phone screens */
+  #footerHP,#logo2,#lastModified {
+    padding: 10px;
+    width: fit-content;
+    color: #ffffff;
+  }
+
+  #footerHP,#logo2,#lastModified {
+    font-size: 26px;
+  }
+  #lastModified{
+  color: #6d6d6d;
+}
+  #h1AB{
+    padding-left: 20px;
+    padding-right: 10px;
+    font-size: 25px;;
+  }
+  #copyRight{
+    width:fit-content;
+    padding-left: 10px;
+    padding-top: 400px;
+    color: #000;
+
+  }
+  #logo5{
+    padding-right: 30px;
+    size: 500%;
+  }
+}
+#footer{
+  mix-blend-mode:color-burn
+}
+                                                                            /*this is the catalogue page code*/
+/*this is the code for the product boxes*/
+#catalogue1{
+  color: #49e6f4;
+}
+#h11{
+  color: #49e6f4;
+}
+.product {
+  width: 300px;
+  margin: 20px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.product img {
+  margin-bottom: 10px;
+}
+
+.product p {
+  margin: 5px;
+  font-size: 16px;
+}
+
+.product img {
+  margin-bottom: 10px;
+}
+
+.product {
+  border: 0px solid rgb(244, 244, 244);
+  padding: 0px;
+  margin: 60px;
+  display: inline-block;
+  background-color: rgb(239, 239, 239);
+  text-align: center;
+  line-break: auto;
+  text-underline-position: below;
+
+}
+
+.product {
+  display: inline-block;
+  width: 30%;
+  margin: 10px;
+  text-align: center;
+}
+/* drop down options for sizes*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.dropbtn {
+  background-color: #efecec;
+  color: rgb(38, 33, 33);
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: #f3f3f3;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  text-align: left;
+}
+
+.dropdown-content a {
+  display: block;
+  color: black;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #ffffff;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #ffffff;
+}
+.dropdown-content {
+  width: 100%;
+}
+
+.dropdown-content a {
+  width: 100%;
+}
+/* this code is for the purchase button */
+.purchase-btn {
+  width: 370px;
+  background-color: #0a0a0a;
+  color: #fff;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  align-items: center;
+}
+
+.purchase-btn:hover {
+  background-color: #151515;
+}
+
+.purchase-body{
+  background-color: #8a8a8a;
+}
+.btn {
+  font-size: 1.2rem;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: rgb(14, 14, 26);
+  color: rgb(234, 234, 234);
+  font-weight: 700;
+  transition: 0.6s;
+ 
+}
+
+.btn:active {
+  scale: 0.92;
+}
+
+.btn:hover {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+  color: rgb(4, 4, 38);
+}
+
+button.purchase-btn {
+  display: block;
+  margin: 0 auto;
+}
+/*this is the code for the images*/
+img {
+  display: block;
+  margin: 0 auto;
+}
+/*this is the code for the footer nav bar*/
+footer .nav-links a {
+  color: #555;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+footer .nav-links a:hover {
+  color: #000;
+}
+@media screen and (max-width: 960px) {
+  #product1, #product2, #product3, #product4, #product5, #product6, #product7, #product8, #product9{
+    padding: 28px;
+    width: 30%;
+  }
+  #catalogue1{
+    padding-left: 30px;
+  }
+
+}
+                                                                                /*this is for the FAQ page */
+#container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #efefef;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+#topnav3 {
+  background-color: hsl(0, 0%, 0%);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+#topnav3 a {
+  float: left;
+  display: block;
+  color: rgb(254, 254, 254);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#topnav3 a.active {
+  background-color: #6f6f6f;
+}
+
+#topnav3 a:hover {
+  background-color: #2c2c2c;
+  color: rgb(255, 255, 255);
+}
+#logo4 {
+  mix-blend-mode: color-burn;
+}
+@media (max-width: 800px) {
+  #topnav3 {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+                                                                                  /* the purchase page*/
+.pch-container {
+  padding-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#container1,
+#container2,
+#container3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-height: calc(100% - 50px);
+  box-sizing: border-box;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group select {
+  display: block;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 30px;
+}
+
+details {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+details p {
+  margin-top: 10px;
+  margin-bottom: 0;
+  display: none;
+}
+
+details:hover p {
+  display: block;
+}
+
+details {
+  cursor: pointer;
+}
+
+details > summary {
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+details > p {
+  display: none;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+details:hover > p {
+  display: block;
+}
+
+summary {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="month"],
+input[type="password"],
+input[type="number"],
+textarea {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+}
+
+.back-button {
+  padding-left: 300px;
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #555;
+}
+
+html, body {
+  height: 100%;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input,
+select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #fcfcfc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  background-color: #232323;
+  color: rgb(255, 255, 255);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  background-color: #4c4c4c;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+                                                                          /*this is the contact us page */
+/*this is the column of the the contact us page */
+
+#CU{
+  color: #49e6f4;
+}
+.column {
+  float: left;
+  width: 33.3%;
+  height: fit-content;
+  margin-bottom: 1px;
+  padding: 0 20px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.row {
+  background-color: #ffffff;
+  height: fit-content;
+}
+
+
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.h1 {
+  font-size: medium;
+  color: #000;
+  margin: 10px;
+}
+
+
+
+.about-section {
+  padding: 40px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+                                                                        /*this is for the about us page*/
+#h1AB{
+  color: #ffffff;
+}
+#AB{
+  color: #49e6f4;
+}
+#logo5 {
+  width: 600px;
+  height: 50px;
+  margin: 5px;
+  mix-blend-mode: color-burn;
+}
+#box{
+  color: #ffffff;
+}
+@media screen and (max-width: 480px) {
+  /* CSS rules for phone screens */
+  #box,#h1AB {
+    padding: 10px;
+    width: fit-content;
+    color: #ffffff;
+  }
+
+  #box h1 {
+    font-size: 26px;
+  }
+}
+#footerHP{
+  align-content: center;
+}
+.box {
+  width: 1100px;
+  height: 100px;
+  background-color: #c3c3c3;
+  font-family:'Times New Roman', Times, serif;
+  padding-top: 15px;
+  color: #fffdfd;
+  border: 5px  solid black;
+  border-top: #292929;
+  border-left: #292929;
+  box-sizing:border-box;
+  padding: 10px;
+  text-shadow: #292929;
+
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.column {
+  flex: 1 1 33.33%;
+  padding:  0px;
+  
+}
+.about-section {
+  padding: 40px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+#footerHP {
+  mix-blend-mode: color-burn;
+}
+@media screen and (max-width: 468px) {
+  #h1AB{
+    color: #000;
+}
+}

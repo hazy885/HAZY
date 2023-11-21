@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head id="head">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/css-assests/style.css">
+    <style>
+        body {
+            background-image: url("_images/layered-waves-haikei.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body id="body">
+    <div id="logo">
+        <img src="_images/Sneaker Vault.jpg" alt="Sneaker Vault Logo" width="15%">
+    </div>
+    <div id="_home-page">
+        <div class="topnav">
+            <a class="active" href="#home">Home</a>
+            <a href="about-us.html">About</a>
+            <a href="catalogue.html">Catalogue</a>
+            <a href="contact-us.html">Contact Us</a>
+            <a href="faq.html">FAQ</a>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <div class="slideshow">
+        <img id="slideshow-image" src="_images/Air Jordan 1 High OG x Dior 1.jpg" alt="Slideshow Image" width="50%">
+    </div>
+
+    <footer id="footer">
+        <h2>What we can do for you</h2>
+        <p>Welcome to our sneaker website. Whether you are a sneakerhead or just looking for a comfortable and stylish
+            pair of shoes, browse our wide selection of sneakers from the world's leading brands and discover new
+            releases, exclusive collaborations, and timeless classics. We are dedicated to providing you with the best
+            shopping experience possible, so shop knowing that we stand behind the quality of our products. Start
+            exploring for your future sneakers today.</p>
+
+        <nav>
+            <div class="menu-container">
+                <a class="active" href="#home">Home</a>
+                <a href="about-us.html">About</a>
+                <a href="catalogue.html">Catalogue</a>
+                <a href="contact-us.html">Contact Us</a>
+                <a href="faq.html">FAQ</a>
+            </div>
+        </nav>
+
+        <div id="logo2">
+            <img src="_images/Sneaker Vault.jpg" alt="Sneaker Vault Logo" width="15%">
+        </div>
+        <p>&copy; 2023 Sneaker Vault. All rights reserved.</p>
+
+        <p id="lastModified"></p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var images = [
+                "_images/Air Jordan 1 High OG x Dior 1.jpg",
+                "_images/Nike Air Force 1 Kith.jpg",
+                "_images/Nike Air Jordan 1 Custom.jpg",
+                "_images/Nike Air Jordan 1 Turbo Green.jpg"
+            ];
+
+            var slideshowImage = $("#slideshow-image");
+            var currentIndex = 0;
+
+            function changeSlide() {
+                currentIndex = (currentIndex + 1) % images.length;
+                slideshowImage.attr("src", images[currentIndex]);
+            }
+
+            setInterval(changeSlide, 5000); // Change slide every 5 seconds
+        });
+
+        $(document).ready(function() {
+            var lastModified = document.lastModified;
+            var lastModifiedDate = new Date(lastModified);
+            var options = { year: 'numeric', month: 'long', day: 'numeric' };
+            var formattedDate = lastModifiedDate.toLocaleDateString(undefined, options);
+            $("#lastModified").text("Last modified: " + formattedDate);
+        });
+
+        $(document).ready(function() {
+            $("#searchButton").click(function() {
+                var searchText = $("#searchInput").val();
+                console.log("Search Query:", searchText);
+                $("#searchInput").val('');
+            });
+        });
+    </script>
+</body>
+
+</html>
